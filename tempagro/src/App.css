@@ -45,6 +45,25 @@ body {
   gap: 18px;
 }
 
+.sidebar-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu-toggle {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background: transparent;
+  border: 0;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+}
+
 .brand {
   display: flex;
   align-items: center;
@@ -423,12 +442,47 @@ body {
     grid-template-columns: 1fr;
   }
   .sidebar {
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    gap: 0;
+    padding: 10px 16px;
+  }
+  .sidebar-topbar .brand {
+    padding: 0;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .sidebar .profile-pill,
+  .sidebar .nav,
+  .sidebar .add-sensor,
+  .sidebar .sidebar-footer {
     display: none;
+  }
+  .sidebar--open {
+    gap: 14px;
+  }
+  .sidebar--open .profile-pill {
+    display: flex;
+  }
+  .sidebar--open .nav {
+    display: flex;
+  }
+  .sidebar--open .add-sensor {
+    display: flex;
+    margin-top: 0;
+  }
+  .sidebar--open .sidebar-footer {
+    display: flex;
   }
   .mid-grid,
   .galpao-metrics {
     grid-template-columns: 1fr;
     flex-direction: column;
     align-items: flex-start;
+  }
+  .content {
+    padding: 22px 20px 32px;
   }
 }
