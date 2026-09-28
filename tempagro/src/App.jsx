@@ -77,11 +77,11 @@ const Icon = {
 };
 
 const navItems = [
-  { label: 'Overview', icon: Icon.Overview, active: true },
-  { label: 'Barns', icon: Icon.Barn },
+  { label: 'Visão geral', icon: Icon.Overview, active: true },
+  { label: 'Galpões', icon: Icon.Barn },
   { label: 'Silos', icon: Icon.Silo },
-  { label: 'Reports', icon: Icon.Reports },
-  { label: 'Settings', icon: Icon.Settings },
+  { label: 'Relatórios', icon: Icon.Reports },
+  { label: 'Configurações', icon: Icon.Settings },
 ];
 
 // Limites usados só para destacar visualmente o card de clima em alerta.
@@ -112,13 +112,13 @@ function Sidebar() {
         </span>
         <div>
           <div className="brand-name">TempAgro</div>
-          <div className="brand-sub">Poultry Management</div>
+          <div className="brand-sub">Gestão Avícola</div>
         </div>
       </div>
 
       <button className="profile-pill">
         <span className="avatar" />
-        Farm Manager Profile
+        Perfil do gerente da fazenda
       </button>
 
       <nav className="nav">
@@ -132,17 +132,17 @@ function Sidebar() {
 
       <button className="add-sensor">
         <Icon.Plus />
-        Add New Sensor
+        Adicionar sensor
       </button>
 
       <div className="sidebar-footer">
         <button className="nav-item">
           <Icon.Help />
-          Help
+          Ajuda
         </button>
         <button className="nav-item">
           <Icon.Logout />
-          Logout
+          Sair
         </button>
       </div>
     </aside>
